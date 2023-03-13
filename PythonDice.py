@@ -17,56 +17,68 @@ while True :
         for A in  range(1,11):
             DiceA = randrange(1,7)
             DiceB = randrange(1,7)
-            print('Player A Dice : ', DiceA)
-            print('Player B Dice : ', DiceB)
             print()
-            print()
+            
             if Ascore >=0 and Bscore >= 0 :
                 if DiceA > DiceB :
                     Ascore += 1
                     print('Player A Dice : ', DiceA)
                     print('Player B Dice : ', DiceB)
                     print()
-                    print()
+                    
+                    wait = input()
 
                 elif DiceA < DiceB :
                     print('Player A Dice : ', DiceA)
                     print('Player B Dice : ', DiceB)
                     Bscore += 1
                     print()
+                    
+                    wait = input()
+
+                elif DiceA == DiceB :
+                    print('Player A Dice : ', DiceA)
+                    print('Player B Dice : ', DiceB)
+                    Ascore += 1
+                    Bscore += 1
+                    
                     print()
+                    
+                    wait = input()
+
 
                 else :
                     print('Player A Score : ', Ascore)
                     print('Player B Score : ', Bscore)
                     print()
-                    print()
+                    
+                    wait = input()
 
     if Ascore > 0 :
         if(Ascore > Bscore):
             print('A Player 가 승리하였습니다!')
             print('B Player 가 졌습니다 ㅠㅠ')
             print()
-            print()
+            
             break
 
         elif(Ascore < Bscore):
             print('B Player가 승리하였습니다!')
             print('A Player가 졌습니다 ㅠㅠ')
             print()
-            print()
+            
             break
 
         elif(Ascore == Bscore):
             print('비겼습니다!\n\n')
             print()
-            print()
+            
             break
 
     elif start == 'p' or start == 'P':
         print('종료되었습니다!\n\n')
         print()
-        print()
+    
         break
     else:
         print("잘못입력했습니다ㅠㅠ")
