@@ -103,7 +103,7 @@ while True :
                     print('Player B Dice : ', DiceB)
                     imageB()
                     print()
-                    print('Player A: ',Ascore,'Player B: ',Bscore)
+                    print('Player A:',Ascore,'Player B:',Bscore)
                     
                     wait = input()
 
