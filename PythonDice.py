@@ -2,6 +2,81 @@ from random import *
 
 Ascore = 0
 Bscore = 0 
+def imageA():
+    if(DiceA == 1):
+        print('***********')
+        print('*         *')
+        print('*    1    *')
+        print('*         *')
+        print('***********')
+    elif(DiceA == 2):
+        print('***********')
+        print('*         *')
+        print('*    2    *')
+        print('*         *')
+        print('***********')
+    elif(DiceA == 3):
+        print('***********')
+        print('*         *')
+        print('*    3    *')
+        print('*         *')
+        print('***********')
+    elif(DiceA == 4):
+        print('***********')
+        print('*         *')
+        print('*    4    *')
+        print('*         *')
+        print('***********')
+    elif(DiceA == 5):
+        print('***********')
+        print('*         *')
+        print('*    5    *')
+        print('*         *')
+        print('***********')
+    elif(DiceA == 6):
+        print('***********')
+        print('*         *')
+        print('*    6    *')
+        print('*         *')
+        print('***********')    
+        
+def imageB() :
+    if (DiceB == 1):
+        print('***********')
+        print('*         *')
+        print('*    1    *')
+        print('*         *')
+        print('***********') 
+    if (DiceB == 2):
+        print('***********')
+        print('*         *')
+        print('*    2    *')
+        print('*         *')
+        print('***********')
+    if (DiceB == 3):
+        print('***********')
+        print('*         *')
+        print('*    3    *')
+        print('*         *')
+        print('***********')
+    if (DiceB == 4):
+        print('***********')
+        print('*         *')
+        print('*    4    *')
+        print('*         *')
+        print('***********')
+    if (DiceB == 5):
+        print('***********')
+        print('*         *')
+        print('*    5    *')
+        print('*         *')
+        print('***********')
+    if (DiceB == 6):
+        print('***********')
+        print('*         *')
+        print('*    6    *')
+        print('*         *')
+        print('***********') 
 
 while True :
     print('--------은우의 주사위 게임 시작--------')
@@ -23,26 +98,37 @@ while True :
                 if DiceA > DiceB :
                     Ascore += 1
                     print('Player A Dice : ', DiceA)
+                    print('Player A Win')
+                    imageA()
                     print('Player B Dice : ', DiceB)
+                    imageB()
                     print()
+                    print('Player A: ',Ascore,'Player B: ',Bscore)
                     
                     wait = input()
 
                 elif DiceA < DiceB :
                     print('Player A Dice : ', DiceA)
+                    imageA()
                     print('Player B Dice : ', DiceB)
+                    print('Player B Win')
+                    imageB()
                     Bscore += 1
                     print()
+                    print('Player A:',Ascore,'Player B:',Bscore)
                     
                     wait = input()
 
                 elif DiceA == DiceB :
                     print('Player A Dice : ', DiceA)
+                    imageA()
                     print('Player B Dice : ', DiceB)
+                    imageB()
                     Ascore += 1
                     Bscore += 1
                     
                     print()
+                    print('Player A:',Ascore,'Player B:',Bscore)
                     
                     wait = input()
 
@@ -51,6 +137,7 @@ while True :
                     print('Player A Score : ', Ascore)
                     print('Player B Score : ', Bscore)
                     print()
+                    print('Player A:',Ascore,'Player B:',Bscore)
                     
                     wait = input()
 
@@ -84,3 +171,4 @@ while True :
         print("잘못입력했습니다ㅠㅠ")
         print('게임이 다시 시작되었습니다!\n\n')
 
+   
